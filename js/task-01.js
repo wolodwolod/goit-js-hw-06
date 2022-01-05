@@ -1,11 +1,9 @@
-const numberItemEl = document.querySelectorAll('li.item').length;
-console.log(`Number of categories: ${numberItemEl}`);
+const categItems = document.querySelectorAll('.item');
+console.log(`Number of categories: ${categItems.length}`);
 
-const liItemsEl = [...document.querySelectorAll('li.item')];
-
-liItemsEl.map(liItem => {
+[...categItems].map(item => {
     
     console.log(
-        `Category: ${liItem.querySelector('h2').textContent}\nElements: ${liItem.querySelectorAll('li').length}`)
+        `Category: ${item.querySelector('h2').textContent}\nElements: ${item.querySelectorAll('li').length}`)
       })
 
