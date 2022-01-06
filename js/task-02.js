@@ -8,7 +8,6 @@ const ingredients = [
 ];
 
 const ingredsEl = document.querySelector('ul#ingredients');
-console.log(ingredsEl);
 
 const makeIngredsEl = options => {
   return options.map(option => {
