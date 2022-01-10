@@ -24,8 +24,6 @@ const makeimgGallEl = options => {
   });
   return textEl;
 };
-const imgItemsEl = makeimgGallEl(images);
 
-console.log(imgItemsEl);
-  imgGallEl.insertAdjacentHTML('beforeend', imgItemsEl);
+  imgGallEl.insertAdjacentHTML('beforeend', makeimgGallEl(images));
 
