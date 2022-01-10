@@ -22,8 +22,8 @@ function onInputBlur(event) {
         event.currentTarget.classList.add('invalid');
     }
     else
-    if (event.currentTarget.value.length === Number(event.currentTarget.dataset.length)) {
+     
         event.currentTarget.classList.add('valid');
-    }
+    
    console.log(event.currentTarget.classList);
 }
